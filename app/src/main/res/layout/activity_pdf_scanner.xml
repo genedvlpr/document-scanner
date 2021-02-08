@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TextScannerUtils.PDFScanner">
+
+    <ImageView
+        android:layout_above="@+id/rel_controls"
+        android:id="@+id/img_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:background="@color/colorNavigationBar"/>
+
+    <com.wonderkiln.camerakit.CameraView
+        android:id="@+id/camera"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cameraGesturePinch="zoom"
+        app:cameraGestureScrollHorizontal="exposureCorrection"
+        app:cameraGestureScrollVertical="exposureCorrection"
+        app:ckCropOutput="true"
+        app:ckDoubleTapToToggleFacing="false"
+        app:ckFacing="back"
+        app:ckFocus="continuous"
+        app:ckJpegQuality="100"
+        app:ckMethod="speed"
+        app:ckPinchToZoom="true"
+        app:ckVideoQuality="highest"
+        app:cameraEngine="camera2"
+        app:cameraUseDeviceOrientation="false"
+        app:cameraHdr="on"
+        app:cameraMode="picture"
+        app:cameraGestureTap="autoFocus"
+        app:ckZoom="0.0" />
+
+
+    <RelativeLayout
+        android:id="@+id/rel_controls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingBottom="10dp"
+        android:paddingEnd="10dp"
+        android:layout_alignParentBottom="true">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scan"
+            style="@style/Widget.MaterialOutlinedButton.Custom"
+            android:layout_toLeftOf="@+id/div"
+            android:layout_alignParentStart="true"/>
+        <RelativeLayout
+            android:id="@+id/div"
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialOutlinedButton.Custom"
+            android:text="Save"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/div"/>
+    </RelativeLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialOutlinedButton.Custom"
+        android:text="View Scanned Document" />
+</RelativeLayout>

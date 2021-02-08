@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ECEFF1"
+    tools:context=".HomeUtils.HomeRegUser"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="45dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:background="@mipmap/ic_header_icon_round"
+            android:contentDescription="@string/nav_header_desc"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_toRightOf="@+id/imageView"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/userNameReg"
+                style="@style/TextAppearance.MyApp.Subtitle1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/emailAddressReg"
+                style="@style/TextAppearance.MyApp.Subtitle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cavite State University - Silang Campus"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#CFD8DC"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:tint="@color/colorTextPrimary"
+            app:srcCompat="@drawable/ic_outline_how_to_reg_24px" />
+
+        <TextView
+            style="@style/TextAppearance.MyApp.Subtitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@+id/img2"
+            android:text="Logged in as Faculty Staff"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

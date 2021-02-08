@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_outline_search_24px"
+            android:title="Scan Documents" />
+        <item
+            android:id="@+id/nav_browse"
+            android:icon="@drawable/ic_outline_list_24px"
+            android:title="Recent Validations" />
+        <item
+            android:id="@+id/nav_recent_validations"
+            android:icon="@drawable/ic_outline_playlist_add_check_24px"
+            android:title="Recent Validations" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_outline_help_outline_24px"
+            android:title="Help" />
+    </group>
+
+    <item android:title="Preferences">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_outline_info_24px"
+                android:title="About" />
+            <item
+                android:id="@+id/nav_signout"
+                android:icon="@drawable/ic_outline_input_24px"
+                android:title="Sign Out" />
+        </menu>
+    </item>
+
+</menu>

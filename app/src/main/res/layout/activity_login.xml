@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="40dp">
+
+        <TextView
+            android:id="@+id/headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login your \nAccount"
+            android:textAppearance="@style/TextAppearance.MyApp.Headline4"
+            android:textColor="@color/colorTextPrimary"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/line"
+            android:layout_width="56dp"
+            android:layout_height="8dp"
+            android:layout_below="@+id/headline"
+            android:background="@color/colorLine" />
+
+        <TextView
+            android:id="@+id/subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line"
+            android:layout_marginTop="16dp"
+            android:textAppearance="@style/TextAppearance.MyApp.Subtitle1"
+            android:text="Login as a faculty staff, \nif you are an accreditor, \nproceed as guest."
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/rel_input_layouts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subhead"
+            android:layout_marginTop="20dp">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tl1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/td1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textCursorDrawable="@null" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tl2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:layout_below="@+id/tl1"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/td2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textCursorDrawable="@null" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rel_input_layouts"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_login"
+                style="@style/Widget.MaterialUnelevatedButton.Custom"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_toLeftOf="@+id/center_grid"
+                android:onClick="login"
+                android:text="Login" />
+
+            <ImageView
+                android:id="@+id/center_grid"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_register"
+                style="@style/Widget.MaterialUnelevatedButton.Custom"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/center_grid"
+                android:onClick="register"
+                android:text="Register" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/grid"
+            android:layout_alignStart="@id/grid"
+            android:layout_alignEnd="@id/grid"
+            android:layout_centerHorizontal="true">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_finish"
+                style="@style/Widget.MaterialOutlinedButton.Custom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="guest"
+                android:text="Guest" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

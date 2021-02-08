@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#607D8B</color>
+    <color name="colorPrimaryDark">#546E7A</color>
+    <color name="colorAccent">#1DE9B6</color>
+    <color name="colorNavigationBar">#EEEEEE</color>
+    <color name="colorTextPrimary">#37474F</color>
+    <color name="colorLine">#37474F</color>
+    <color name="bg1">#FFFFFF</color>
+
+    <color name="my_app_primary_variant_color">#546e7a</color>
+    <color name="my_app_secondary_variant_color">#64ffda</color>
+    <color name="my_app_surface_color">#FFFFFF</color>
+    <color name="my_app_color_on_primary">#FAFAFA</color>
+    <color name="my_app_color_background">#FFFFFF</color>
+    <color name="my_app_color_on_background">#29434e</color>
+    <color name="my_app_color_on_secondary">#14cba8</color>
+    <color name="my_app_color_error">#FFD180</color>
+    <color name="my_app_color_on_error">#FF6D00</color>
+    <color name="my_app_color_on_surface">#000000</color>
+
+    <color name="primaryColor">#546e7a</color>
+    <color name="primaryLightColor">#819ca9</color>
+    <color name="primaryDarkColor">#29434e</color>
+    <color name="secondaryColor">#64ffda</color>
+    <color name="secondaryLightColor">#9effff</color>
+    <color name="secondaryDarkColor">#14cba8</color>
+    <color name="primaryTextColor">#ffffff</color>
+    <color name="secondaryTextColor">#000000</color>
+    <color name="trans_card_bg">#9D000000</color>
+
+
+</resources>

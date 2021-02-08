@@ -1,0 +1,45 @@
+<resources>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.MaterialComponents.Light">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <item name="colorPrimaryVariant">@color/my_app_primary_variant_color</item>
+        <item name="colorSecondaryVariant">@color/my_app_secondary_variant_color</item>
+        <item name="colorSurface">@color/my_app_surface_color</item>
+        <item name="colorSecondary">@color/colorAccent</item>
+        <item name="colorOnPrimary">@color/my_app_color_on_primary</item>
+        <item name="colorOnSecondary">@color/my_app_color_on_secondary</item>
+        <item name="android:colorBackground">@color/my_app_color_background</item>
+        <item name="colorOnBackground">@color/my_app_color_on_background</item>
+        <item name="colorError">@color/my_app_color_error</item>
+        <item name="colorOnError">@color/my_app_color_on_error</item>
+        <item name="colorOnSurface">@color/my_app_color_on_surface</item>
+        <item name="scrimBackground">@color/mtrl_scrim_color</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:navigationBarColor">@color/colorNavigationBar</item>
+        <item name="materialButtonStyle">@style/Widget.MaterialButton.Custom</item>
+        <item name="materialButtonOutlinedStyle">@style/Widget.MaterialOutlinedButton.Custom</item>
+        <item name="textInputStyle">@style/Widget.MaterialOutlinedTextField.Custom</item>
+
+
+        <item name="android:textColorPrimary">@color/colorPrimaryDark</item>
+        <item name="android:statusBarColor">@color/colorNavigationBar</item>
+
+        <item name="textAppearanceHeadline4">@style/TextAppearance.MyApp.Headline4</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.MyApp.Headline5</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.MyApp.Headline6</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.MyApp.Subtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.MyApp.Subtitle2</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.MyApp.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.MyApp.Body2</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.MyApp.Caption</item>
+        <item name="textAppearanceButton">@style/TextAppearance.MyApp.Button</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.MyApp.Overline</item>
+        <item name="floatingActionButtonStyle">@style/FabStyle</item>
+    </style>
+
+</resources>

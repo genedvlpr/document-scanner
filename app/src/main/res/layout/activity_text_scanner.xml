@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TextScannerUtils.TextScanner">
+
+    <com.wonderkiln.camerakit.CameraView
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cameraGesturePinch="zoom"
+        app:cameraGestureScrollHorizontal="exposureCorrection"
+        app:cameraGestureScrollVertical="exposureCorrection"
+        app:ckCropOutput="true"
+        app:ckDoubleTapToToggleFacing="false"
+        app:ckFacing="back"
+        app:ckFocus="continuous"
+        app:ckJpegQuality="100"
+        app:ckMethod="speed"
+        app:ckPinchToZoom="true"
+        app:ckVideoQuality="highest"
+        app:ckZoom="0.0" />
+
+
+    <ImageView
+        android:id="@+id/img_preview"
+        android:layout_width="100dp"
+        android:layout_height="200dp"  />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fab_area"
+        android:layout_margin="20dp"
+        android:id="@+id/crd_area_holder"
+        android:layout_marginTop="20dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+            <TextView
+                android:id="@+id/tv_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textAppearance="@style/TextAppearance.MyApp.Subtitle3"/>
+        </RelativeLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true">
+        <ImageButton
+            android:id="@+id/flashOff"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_outline_flash_off_24px"
+            android:background="@drawable/circular_drawable"
+            android:tint="@color/primaryDarkColor"/>
+        <ImageButton
+            android:id="@+id/flashOn"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:padding="5dp"
+            android:layout_marginStart="10dp"
+            android:scaleType="centerCrop"
+            android:tint="@color/primaryDarkColor"
+            android:src="@drawable/ic_outline_flash_on_24px"
+            android:background="@drawable/circular_drawable"/>
+    </LinearLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/fab_area"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/ic_baseline_font_download_24px"
+        app:tint="@color/primaryDarkColor" />
+
+
+</RelativeLayout>

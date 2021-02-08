@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="finish">Завершить</string>
+    <string name="crop">Обрезать</string>
+    <string name="rotate">Повернуть</string>
+    <string name="cant_crop">Не можем обрезать изображение, меняйте пункты</string>
+    <string name="transforming">Трансформируется...</string>
+
+    <string name="mode_none">Никакой</string>
+    <string name="mode_black_white">Черно-белый</string>
+    <string name="mode_magic">Волшебный</string>
+</resources>

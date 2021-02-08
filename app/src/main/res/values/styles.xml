@@ -1,0 +1,275 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryVariant">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:navigationBarColor">@color/colorNavigationBar</item>
+        <item name="android:textColorPrimary">@color/colorTextPrimary</item>
+        <item name="android:textColorSecondary">@color/colorTextPrimary</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppThemeFullScreen" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="android:windowFullscreen">true</item>-->
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:navigationBarColor">@color/colorNavigationBar</item>
+        <item name="android:textColorPrimary">@color/colorTextPrimary</item>
+        <item name="android:textColorSecondary">@color/colorTextPrimary</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppThemeTransparentStatusBar" parent="Theme.MaterialComponents.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="android:windowFullscreen">true</item>-->
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:navigationBarColor">@color/colorNavigationBar</item>
+        <item name="android:textColorPrimary">@color/colorTextPrimary</item>
+        <item name="android:textColorSecondary">@color/colorTextPrimary</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="MaterialTransparentStatusBar" parent="Theme.MaterialComponents.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryVariant">@color/my_app_primary_variant_color</item>
+        <item name="colorSecondaryVariant">@color/my_app_secondary_variant_color</item>
+        <item name="colorSurface">@color/my_app_surface_color</item>
+        <item name="colorSecondary">@color/colorAccent</item>
+        <item name="colorOnPrimary">@color/my_app_color_on_primary</item>
+        <item name="colorOnSecondary">@color/my_app_color_on_secondary</item>
+        <item name="android:colorBackground">@color/my_app_color_background</item>
+        <item name="colorOnBackground">@color/my_app_color_on_background</item>
+        <item name="colorError">@color/my_app_color_error</item>
+        <item name="colorOnError">@color/my_app_color_on_error</item>
+        <item name="colorOnSurface">@color/my_app_color_on_surface</item>
+        <item name="scrimBackground">@color/mtrl_scrim_color</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:navigationBarColor">@color/colorNavigationBar</item>
+        <item name="materialButtonStyle">@style/Widget.MaterialButton.Custom</item>
+        <item name="materialButtonOutlinedStyle">@style/Widget.MaterialOutlinedButton.Custom</item>
+        <item name="textInputStyle">@style/Widget.MaterialOutlinedTextField.Custom</item>
+
+        <item name="textAppearanceHeadline4">@style/TextAppearance.MyApp.Headline4</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.MyApp.Headline5</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.MyApp.Headline6</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.MyApp.Subtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.MyApp.Subtitle2</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.MyApp.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.MyApp.Body2</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.MyApp.Caption</item>
+        <item name="textAppearanceButton">@style/TextAppearance.MyApp.Button</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.MyApp.Overline</item>
+
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.MaterialComponents.MaterialAlertDialog</item>
+    </style>
+
+    <style name="Widget.MaterialButton.Custom" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/colorAccent</item>
+        <item name="cornerRadius">18dp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textAppearance">@style/TextAppearance.MyApp.Button</item>
+    </style>
+
+    <style name="Widget.MaterialUnelevatedButton.Custom" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="backgroundTint">@color/colorAccent</item>
+        <item name="cornerRadius">18dp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textAppearance">@style/TextAppearance.MyApp.Button</item>
+    </style>
+
+    <style name="Widget.MaterialOutlinedButton.Custom" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/colorAccent</item>
+        <item name="cornerRadius">18dp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="rippleColor">@color/secondaryColor</item>
+        <item name="android:textAppearance">@style/TextAppearance.MyApp.Button</item>
+    </style>
+
+    <style name="Widget.MaterialOutlinedTextField.Custom" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/colorAccent</item>
+        <item name="hintTextColor">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="android:textColorPrimary">@color/colorTextPrimary</item>
+        <item name="android:textColorSecondary">@color/colorTextPrimary</item>
+    </style>
+
+
+    <style name="TextAppearance.MyApp.Headline4" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/product_sans_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">34sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="TextAppearance.MyApp.Headline5" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/product_sans_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="TextAppearance.MyApp.Headline6" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/product_sans_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="TextAppearance.MyApp.Subtitle1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/product_sans_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="TextAppearance.MyApp.Subtitle2" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/product_sans_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="TextAppearance.MyApp.Subtitle3" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/product_sans_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="TextAppearance.MyApp.Body1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/product_sans_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="TextAppearance.MyApp.Body2" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/product_sans_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="TextAppearance.MyApp.Caption" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/product_sans_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="TextAppearance.MyApp.Button" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/product_sans_bold</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="TextAppearance.MyApp.Overline" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/product_sans_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="FabStyle" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="backgroundTint">@color/colorAccent</item>
+        <item name="tint">@color/my_app_color_on_background</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.MaterialComponents.Light">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="colorPrimaryVariant">@color/my_app_primary_variant_color</item>
+        <item name="colorSecondaryVariant">@color/my_app_secondary_variant_color</item>
+        <item name="colorSurface">@color/my_app_surface_color</item>
+        <item name="colorSecondary">@color/colorAccent</item>
+        <item name="colorOnPrimary">@color/my_app_color_on_primary</item>
+        <item name="colorOnSecondary">@color/my_app_color_on_secondary</item>
+        <item name="android:colorBackground">@color/my_app_color_background</item>
+        <item name="colorOnBackground">@color/my_app_color_on_background</item>
+        <item name="colorError">@color/my_app_color_error</item>
+        <item name="colorOnError">@color/my_app_color_on_error</item>
+        <item name="colorOnSurface">@color/my_app_color_on_surface</item>
+        <item name="scrimBackground">@color/mtrl_scrim_color</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:navigationBarColor">@color/colorNavigationBar</item>
+        <item name="materialButtonStyle">@style/Widget.MaterialButton.Custom</item>
+        <item name="materialButtonOutlinedStyle">@style/Widget.MaterialOutlinedButton.Custom</item>
+        <item name="textInputStyle">@style/Widget.MaterialOutlinedTextField.Custom</item>
+
+        <item name="android:textColorPrimary">@color/colorPrimaryDark</item>
+
+        <item name="android:statusBarColor">@color/colorNavigationBar</item>
+
+        <item name="textAppearanceHeadline4">@style/TextAppearance.MyApp.Headline4</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.MyApp.Headline5</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.MyApp.Headline6</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.MyApp.Subtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.MyApp.Subtitle2</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.MyApp.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.MyApp.Body2</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.MyApp.Caption</item>
+        <item name="textAppearanceButton">@style/TextAppearance.MyApp.Button</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.MyApp.Overline</item>
+        <item name="floatingActionButtonStyle">@style/FabStyle</item>
+    </style>
+
+    <style name="NavStyle" parent="Widget.Design.NavigationView">
+        <item name="android:tint">@color/colorPrimary</item>
+        <item name="android:iconTint" tools:ignore="NewApi">@color/colorPrimary</item>
+        <item name="itemIconTint">@color/colorPrimaryDark</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Light">
+        <item name="android:elevation">0dp</item>
+        <item name="android:background">@color/my_app_color_background</item>
+        <item name="android:backgroundTint">@color/my_app_color_background</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" >
+        <item name="android:background">@color/my_app_color_background</item>
+        <item name="android:backgroundTint">@color/my_app_color_background</item>
+        <item name="android:textColorPrimary">@color/my_app_color_background</item>
+        <item name="android:elevation">0dp</item>
+    </style>
+
+    <style name="AlertDialogTheme" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="buttonBarPositiveButtonStyle">@style/Alert.Button.Positive</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="Alert.Button.Positive" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="rippleColor">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+</resources>

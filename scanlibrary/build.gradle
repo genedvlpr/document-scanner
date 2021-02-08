@@ -1,0 +1,49 @@
+apply plugin: 'com.android.library'
+
+
+android {
+    compileSdkVersion 28
+    //buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        minSdkVersion 14
+        //noinspection ExpiredTargetSdkVersion
+        targetSdkVersion 28
+        versionCode 4
+        versionName "4.0"
+        ndk
+                {
+                    moduleName "Scanner"
+                }
+    }
+//    sourceSets.main
+//            {
+//                jni.srcDirs = []
+//                jniLibs.srcDir 'src/main/libs'
+//            }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+
+repositories {
+    maven {
+        url 'https://raw.github.com/vRallev/mvn-repo/master/'
+    }
+}
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //Library for Image View That have Ability to zoom...
+    implementation 'com.davemorrissey.labs:subsampling-scale-image-view:2.3.0'
+    //implementation 'org.opencv:opencv-android:3.4.1'
+    implementation project(':openCVLibrary')
+    implementation 'androidx.core:core:1.0.2'
+}
+
+ 

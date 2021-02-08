@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.genedev.documentscanner">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".TextScannerUtils.PDFScanner"></activity>
+        <activity
+            android:name=".TextScannerUtils.TextScanner"
+            android:screenOrientation="landscape"
+            android:theme="@style/MaterialTransparentStatusBar" />
+        <activity
+            android:name=".HomeUtils.HomeRegUser"
+            android:label=" "
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HomeUtils.HomeGuest"
+            android:label=" "
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RegistrationUtils.RegistrationName"
+            android:theme="@style/MaterialTransparentStatusBar" />
+        <activity
+            android:name=".RegistrationUtils.RegistrationEmail"
+            android:theme="@style/MaterialTransparentStatusBar" />
+        <activity
+            android:name=".Login"
+            android:theme="@style/MaterialTransparentStatusBar" />
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/AppThemeFullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.firebase.ml.vision.DEPENDENCIES"
+            android:value="ocr" />
+    </application>
+
+</manifest>
