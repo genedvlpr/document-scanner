@@ -1,6 +1,8 @@
 # Document Scanner
 Android Based University Accreditation Document Scanner using Text Recognition
 
+<img src="https://drive.google.com/uc?export=view&id=1x_tdtGtPDXkGhBWYWkKjgFVHzFNGKZSa"/>
+
 # Integrations
 - Firebase Auth, Storage, Analytics, MLKit and Firestore
 - Algolia Search API
